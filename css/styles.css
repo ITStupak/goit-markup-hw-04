@@ -9,6 +9,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -222,6 +223,12 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+.footer-wrap {
+  display: flex;
+}
+.footer-block-logo {
+  margin-right: 120px;
+}
 .footer-logo {
   display: inline-block;
   padding: 0;
@@ -230,4 +237,18 @@ img {
 .footer-text {
   color: #f4f4fd;
   width: 264px;
+}
+.footer-title {
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-block-social {
+  width: 208px;
+  height: 80px;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
