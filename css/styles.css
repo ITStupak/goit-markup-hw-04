@@ -63,13 +63,25 @@ img {
   color: #2e2f42;
   font-weight: 500;
   padding: 24px 0;
+  position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .menu-link:hover,
 .menu-link:focus {
   color: #404bbf;
 }
-.menu-link:active {
-  text-decoration: underline;
+.underline:active::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  background: #404bbf;
+  content: "";
 }
 .nav-contacts {
   font-style: normal;
@@ -83,6 +95,10 @@ img {
 .contacts-link {
   color: #434455;
   padding: 24px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -132,6 +148,10 @@ img {
   box-shadow: 0 4px 4px 0 #00000026;
   margin: 0 auto;
   padding: 16px 32px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .about-btn:hover,
 .about-btn:focus {
@@ -222,6 +242,12 @@ img {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
 }
+.portfolio-item {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 #2e2f4214, 0 1px 1px 0 #2e2f4229,
     0 1px 6px 0 #2e2f4214;
@@ -230,18 +256,19 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-.footer-wrap {
+.footer-wrapper {
   display: flex;
-}
-.footer-block-logo {
-  margin-right: 120px;
+  align-items: flex-start;
 }
 .footer-logo {
+  margin-right: 120px;
+}
+.f-logo {
   display: inline-block;
   padding: 0;
   margin-bottom: 16px;
 }
-.footer-text {
+.f-text {
   color: #f4f4fd;
   width: 264px;
 }
@@ -250,7 +277,7 @@ img {
   color: #fff;
   margin-bottom: 16px;
 }
-.footer-block-social {
+.footer-social {
   width: 208px;
   height: 80px;
 }
@@ -259,14 +286,16 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.icon {
+.icon,
+.footer-icon {
   fill: #4d5ae5;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .icon:hover {
   fill: #404bbf;
-}
-.footer-icon {
-  fill: #4d5ae5;
 }
 .footer-icon:hover {
   fill: #31d0aa;
